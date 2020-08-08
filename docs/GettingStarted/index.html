@@ -1,0 +1,931 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.3">
+    
+    
+      
+        <title>General - MontiCore</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.947af8d5.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#monticore-getting-started" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="MontiCore" class="md-header-nav__button md-logo" aria-label="MontiCore">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            MontiCore
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              General
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/MontiCore/monticore/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="MontiCore" class="md-nav__button md-logo" aria-label="MontiCore">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"/></svg>
+
+    </a>
+    MontiCore
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/MontiCore/monticore/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Getting Started
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        General
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="General" class="md-nav__link md-nav__link--active">
+      General
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-line" class="md-nav__link">
+    Command Line
+  </a>
+  
+    <nav class="md-nav" aria-label="Command Line">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-a-nutshell" class="md-nav__link">
+    In a nutshell
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-description" class="md-nav__link">
+    Detailed description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-monticore" class="md-nav__link">
+    Run MontiCore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compile-and-run" class="md-nav__link">
+    Compile and run
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experiment" class="md-nav__link">
+    Experiment:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downloads" class="md-nav__link">
+    Downloads
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-information" class="md-nav__link">
+    Further Information
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../GettingStartedEclipse/" title="Eclipse" class="md-nav__link">
+      Eclipse
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../GettingStartedIntelliJ/" title="IntelliJ" class="md-nav__link">
+      IntelliJ
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../BestPractices/" title="Best Practices" class="md-nav__link">
+      Best Practices
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Grammars
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Grammars" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Grammars
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../monticore-grammar/src/main/grammars/de/monticore/Grammars/" title="General" class="md-nav__link">
+      General
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../monticore-grammar/src/main/grammars/de/monticore/expressions/Expressions/" title="Expressions" class="md-nav__link">
+      Expressions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../monticore-grammar/src/main/grammars/de/monticore/literals/Literals/" title="Literals" class="md-nav__link">
+      Literals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../monticore-grammar/src/main/java/de/monticore/types/check/Types/" title="Types" class="md-nav__link">
+      Types
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../DevelopedLanguages/" title="Languages" class="md-nav__link">
+      Languages
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Publications/" title="Publications" class="md-nav__link">
+      Publications
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      More Information
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="More Information" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        More Information
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../00.org/Explanations/CHANGELOG/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../00.org/Licenses/LICENSE-MONTICORE-3-LEVEL/" title="License" class="md-nav__link">
+      License
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../00.org/Explanations/FAQ/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../further_docs/Impressum/" title="Impressum" class="md-nav__link">
+      Impressum
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-line" class="md-nav__link">
+    Command Line
+  </a>
+  
+    <nav class="md-nav" aria-label="Command Line">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#in-a-nutshell" class="md-nav__link">
+    In a nutshell
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#detailed-description" class="md-nav__link">
+    Detailed description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-monticore" class="md-nav__link">
+    Run MontiCore
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compile-and-run" class="md-nav__link">
+    Compile and run
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experiment" class="md-nav__link">
+    Experiment:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downloads" class="md-nav__link">
+    Downloads
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-information" class="md-nav__link">
+    Further Information
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <!-- (c) https://github.com/MontiCore/monticore -->
+
+<h1 id="monticore-getting-started">MontiCore - Getting Started</h1>
+<hr />
+<p>In the following you will learn how to get started with MontiCore. 
+Before you start please make sure that Java is installed on your system as described 
+in the <a href="#prerequisites">prerequisites</a>. Now that your system is ready you have three options to get started. 
+Just choose one of the following guides:</p>
+<ul>
+<li>
+<p><a href="#command-line">Command Line</a></p>
+</li>
+<li>
+<p><a href="../GettingStartedEclipse/">Eclipse</a></p>
+</li>
+<li>
+<p><a href="../GettingStartedIntelliJ/">IntelliJ</a></p>
+</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<hr />
+<ol>
+<li>Install the Java 8 <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">JDK</a>.</li>
+<li>Make sure the environment variable JAVA_HOME points to the installed JDK, 
+NOT the JRE (e.g. ‹/usr/lib/jvm/java-8-openjdk› on UNIX or 
+‹C:\Program Files\Java\jdk1.8.0_51› on Windows). You will need this in order to run the Java 
+compiler for compiling the generated Java source files; see <a href="https://stackoverflow.com/questions/tagged/java-home">here</a> for more information.</li>
+<li>Also make sure that the PATH variable is set such that the Java compiler is available.
+ JDK installations on UNIX systems do this automatically. On Windows systems the ‹bin› directory of 
+ the JDK installation needs to be appended to the PATH variable, e.g. ‹%PATH%;%JAVA_HOME%\bin› 
+ (see also <a href="https://stackoverflow.com/questions/2079635/how-can-i-set-the-path-variable-for-javac-so-i-can-manually-compile-my-java-wor">here</a>).</li>
+</ol>
+<h2 id="command-line">Command Line</h2>
+<hr />
+<p>MontiCore supports different environments. For a quick peek, the command line version can be tried out with an exemplary automata DSL using the following instructions:</p>
+<h3 id="in-a-nutshell">In a nutshell</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prerequisites</td>
+<td>Install the Java Development Kit (JDK) 8.</td>
+</tr>
+<tr>
+<td>Installation</td>
+<td>Download the MontiCore distribution file, unzip it, and change to the extracted directory.</td>
+</tr>
+<tr>
+<td>Running MontiCore</td>
+<td>Execute MontiCore on the provided language definition ‹Automata.mc4›.</td>
+</tr>
+<tr>
+<td>Compiling the Product</td>
+<td>Compile all the generated and supplied handwritten Java source files.</td>
+</tr>
+<tr>
+<td>Running the Product</td>
+<td>Execute the automata tool on an example model ‹example/PingPong.aut›.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="detailed-description">Detailed description</h3>
+<h3 id="installation">Installation</h3>
+<ol>
+<li>Download the MontiCore <a href="http://www.monticore.de/gettingstarted/monticore-cli-6.0.0.zip">zip distribution file</a>.</li>
+<li>Unzip the distribution. It will unzip a directory called ‹mc-workspace› containing the executable MontiCore CLI (short for command line interface) JAR along with a directory ‹src› containing handwritten automata DSL infrastructure, a directory ‹hwc› containing handwritten code that will be incorporated into the generated code, and a directory ‹example› containing an example automata model.</li>
+</ol>
+<h3 id="run-monticore">Run MontiCore</h3>
+<ol>
+<li>Open a command line interface and change to the unzipped directory ‹mc-workspace›).</li>
+<li>The distribution contains the sources of an automata DSL consisting of the automata grammar and handwritten Java files in the directory ‹src›. Execute the following command in order to generate the language infrastructure of the specified automata DSL:</li>
+</ol>
+<p><strong>java -jar monticore-cli.jar Automata.mc4 -hcp hwc/</strong></p>
+<p>The only required argument ‹Automata.mc4› denotes the input grammar 
+for MontiCore to process and generate the language infrastructure for. 
+The second argument denotes the path to look for handwritten code that is to be 
+incorporated into the generated infrastructure.
+MontiCore will be launched and the following steps will be executed:</p>
+<ol>
+<li>The specified grammar will be parsed and processed by MontiCore.</li>
+<li>Java source files for the corresponding DSL infrastructure will be generated into the default output directory ‹out›. This infrastructure consists of:<ol>
+<li><strong>out/automata/_ast</strong> containing the abstract syntax representation of the automata DSL.</li>
+<li><strong>out/automata/_cocos</strong> containing infrastructure for context conditions of the automata DSL.</li>
+<li><strong>out/automata/_od</strong> containing infrastructure for printing object diagrams of the automata DSL.</li>
+<li><strong>out/automata/_parser</strong> containing the generated parsers which are based on <a href="https://www.antlr.org/">ANTLR</a>.</li>
+<li><strong>out/automata/_symboltable</strong> containing infrastructure for the symbol table of the automata DSL.</li>
+<li><strong>out/automata/_visitor</strong> containing infrastructure for visitors of the automata DSL.</li>
+<li><strong>out/reports/Automata</strong> containing reports created during the processing of the automata grammar.</li>
+</ol>
+</li>
+<li>The output directory will also contain a log file of the executed generation process ‹monticore.YYYY-MM-DD-HHmmss.log›.</li>
+</ol>
+<h3 id="compile-and-run">Compile and run</h3>
+<ol>
+<li>Compiling the automata DSL</li>
+<li>Execute the command:
+<strong>javac -cp monticore-cli.jar -sourcepath "src/;out/;hwc/" src/automata/AutomataTool.java</strong>
+<strong>Please note:</strong> on Unix systems paths are separated using ":" (colon) instead of semicolons.
+This will compile all generated classes located in ‹out/› and all handwritten classes located in ‹src/› and ‹hwc/›. Please note that the structure of the handwritten classes follows (though not necessarily) the package layout of the generated code, i.e. there are the following sub directories (Java packages):<ol>
+<li><strong>src/automata</strong> contains the top level language realization for using the generated DSL infrastructure. In this case the class ‹src/automata/AutomataTool.java› constitutes a main class executable for processing automata models with the automata DSL (inspect the class and see below for how to execute it).</li>
+<li><strong>src/automata/cocos</strong> contains infrastructure for context condition of the automata DSL.</li>
+<li><strong>src/automata/prettyprint</strong> contains an exemplary use of the generated visitor infrastructure for processing the parsed model. Here: for pretty printing.</li>
+<li><strong>src/automata/visitors contains</strong> an exemplary analysis using the visitor infrastructure. The exemplary analysis counts the states contained in the parsed automata model.</li>
+<li><strong>hwc/automata/_ast</strong> contains an exemplary usage of the handwritten code integration mechanism for modifying the AST for the automata DSL.</li>
+<li><strong>hwc/automata/_symboltable</strong> contains handwritten extensions of the generated symbol table infrastructure.</li>
+</ol>
+</li>
+<li>Running the automata DSL tool<ul>
+<li>Execute the command: <br>
+<strong>java -cp "src/;out/;hwc/;monticore-cli.jar" automata.AutomataTextTool example/PingPong.aut</strong> <br>
+<strong>Please note:</strong> on Unix systems paths are separated using ":" (colon) instead of semicolons.
+This will run the automata DSL tool. The argument ‹example/PingPong.aut› is passed to the automata DSL tool as input file. Examine the output on the command line which shows the processing of the example automata model.</li>
+</ul>
+</li>
+</ol>
+<h3 id="experiment">Experiment:</h3>
+<p>The shipped example automata DSL (all sources contained in ‹mc-workspace/src› and ‹mc-workspace/hwc›) can be used as a starting point. It can easily be altered to specify your own DSL by adjusting the grammar and the handwritten Java sources and rerunning MontiCore as described above.</p>
+<p>The Eclipse or IntelliJ version of the Getting Started can be found here:</p>
+<ul>
+<li>
+<p><a href="../GettingStartedEclipse/">Eclipse</a></p>
+</li>
+<li>
+<p><a href="../GettingStartedIntelliJ/">IntelliJ</a></p>
+</li>
+</ul>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<hr />
+<ul>
+<li>If an error occurs and you cannot solve the problem you may take a look into the MontiCore 
+log file located in the respectively specified output directory 
+(e.g. ‹out/monticore.YYYY-MM-DD-HHmmss.log› by default). 
+It contains more verbose and developer-oriented, technical output than the CLI output.</li>
+<li>Please report any unknown issues to <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#117;&#103;&#114;&#101;&#112;&#111;&#114;&#116;&#64;&#109;&#111;&#110;&#116;&#105;&#99;&#111;&#114;&#101;&#46;&#100;&#101;">&#98;&#117;&#103;&#114;&#101;&#112;&#111;&#114;&#116;&#64;&#109;&#111;&#110;&#116;&#105;&#99;&#111;&#114;&#101;&#46;&#100;&#101;</a>. 
+Please include the processed grammar, model, and the log file.</li>
+</ul>
+<h2 id="downloads">Downloads</h2>
+<hr />
+<ul>
+<li><a href="http://www.monticore.de/gettingstarted/monticore-cli-6.0.0.zip">MontiCore zip with automata DSL example</a></li>
+<li><a href="http://www.monticore.de/gettingstarted/monticore-cli-6.0.0.zip">Executable MontiCore Java archive (without example)</a></li>
+</ul>
+<h2 id="further-information">Further Information</h2>
+<ul>
+<li>
+<p>see also <a href="http://www.monticore.de/"><strong>MontiCore Reference Manual</strong></a></p>
+</li>
+<li>
+<p><a href="../..">MontiCore project</a> - MontiCore</p>
+</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../.." title="Home" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../GettingStartedEclipse/" title="Eclipse" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Eclipse
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            (c) https://github.com/MontiCore/monticore
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.c3dc8c49.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f9edbbd5.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.8e2cddea.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

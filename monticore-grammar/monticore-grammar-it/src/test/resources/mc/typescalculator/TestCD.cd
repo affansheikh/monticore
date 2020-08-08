@@ -1,0 +1,37 @@
+/* (c) https://github.com/MontiCore/monticore */
+package mc.typescalculator;
+
+import mc.common.Basics;
+
+classdiagram TestCD{
+
+  class B{
+    B b;
+    Double a;
+    C x;
+    static D z;
+  }
+
+  interface C{
+    static G f;
+  }
+
+  class D implements mc.typescalculator.TestCD.C{
+    Integer s;
+    static G f;
+    static B y;
+  }
+
+  class G{
+    static String toString();
+  }
+
+  class Integer{
+
+  }
+
+  class Double{
+
+  }
+
+}
